@@ -1,0 +1,196 @@
+/*
+Theme Name: Helppo
+Theme URI: https://github.com/HasStacey/Helppo/
+Author: Stacey Lane
+Author URI: https://github.com/HasStacey/Helppo/
+Description: Blank starter theme built with Underscores, HTML5 Boilerplate and Unsemantic Grid System
+Version: 1.0
+License: GNU General Public License
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+// --------------------------------------------------------------
+// TABLE OF CONTENTS:
+// --------------------------------------------------------------
+// 		1.0 - Site-wide Settings
+// 		2.0 - Extends & Mixins & Unsemantic Grid System
+// 		3.0 - Normalize
+//			  3.1 - HTML5 Display Definitions
+//			  3.2 - Base Styles
+//			  3.3 - Lists (including nav resets)
+//			  3.4 - Embedded Content (img, fig, svg)
+//			  3.5 - Table reset
+// 		4.0 - Typography
+//			  4.1 - Base
+//			  4.2 - Links
+//			  4.3 - Headings
+//			  4.4 - Block Elements
+//			  4.5 - Inline Elements
+//		5.0 - Forms
+//	    	  5.1 - Base
+//	    	  5.2 - Inputs, Selects, Textareas, Base Button Styles
+//	    	  5.3 - Buttons (both <input> and <button>)
+//	    6.0 - Menus
+//	    	  6.1 - Main Menu
+//			  6.2 - Small Menu
+//		7.0 - Accessibility
+//		8.0 - Wordpress Defaults
+//			  8.1 - Alignments
+//			  8.2 - Clears
+//			  8.3 - Widgets
+//			  8.4 - Posts & Pages
+//			  8.5 - Asides
+//			  8.6 - Comments
+//			  8.7 - Infinite Scroll
+//			  8.8 - Media
+//		9.0 - Your Styles
+//	   10.0 - Print Styles
+// --------------------------------------------------------------
+
+
+// -------------------------------------------------------------
+// 1.0 - Site-wide Settings
+// -------------------------------------------------------------
+
+	// 	1.  Set to true if you want to add support for IE6 and IE7
+	//	2.	Set to false if you want inline buttons
+	//	3. 	Adjusts font sizes for desktop, tablet and mobile views. Set the $font-size-* below
+	$legacy_support_for_ie: false; // 1
+	$buttons_display_block: false; // 2
+	$rem-support: true; // 3
+	
+	// Media Break Points
+	$mobile-max: 767px;
+	$tablet-min: 768px;
+	$tablet-max: 1024px;
+	$desktop-min: 1025px;
+	$desktop-max: 1200px;
+	
+	
+	// Primary font is for main copy 
+	// Secondary font is for headings
+	$font-primary: sans-serif;
+	$font-secondary: serif;
+	
+	
+	// Heading Settings
+	$h1_font_size: 2em;
+	$h2_font_size: 1.5em;
+	$h3_font_size: 1.17em;
+	$h4_font_size: 1em;
+	$h5_font_size: 0.83em;
+	$h6_font_size: 0.75em;
+	
+	$h1_margin: 0.67em 0;
+	$h2_margin: 0.83em 0;
+	$h3_margin: 1em 0;
+	$h4_margin: 1.33em 0;
+	$h5_margin: 1.67em 0;
+	$h6_margin: 2.33em 0;
+	
+	$heading-font: $font-secondary;
+	
+	
+	// Main body copy
+	$font-size-desktop: 1rem;
+	$font-size-tablet: 1.25rem;
+	$font-size-mobile: 1.5rem;
+	
+	$line-height: 1.5em; // Also changes the bottom margin of HR, UL and OL.
+	
+	
+	// Colors
+	$color-brand: #1ea2eb;
+	$color-primary: #404040; // Text Color
+	$color-highlights: lighten($color-brand, 40%); // When text is selected
+	$color-borders: lighten($color-primary, 60%);
+	$color-background: #fff;
+	
+	// Links
+	$link-color: $color-brand;
+	$link-visited: $link-color;
+	$link-active: darken($link-color, 20%);
+	
+	// Borders
+	$border-radius: 3px;
+	$border-object: 1px solid $color-borders;
+	
+	// Buttons (Found in _normalize.scss)
+	$button-background: lighten($color-brand, 10%);
+	$button-border: 1px solid darken($color-brand, 10%);
+	$button-text-color: #fff;
+	
+	$button-hover-background: darken($color-brand, 10%);
+	$button-hover-border: $button-border;
+	$button-hover-text-color: $button-text-color;
+	
+	$button-active-background: darken($color-brand, 20%);
+	$button-active-border: 1px solid $button-active-background;
+	$button-active-text-color: $button-text-color;
+	
+	$button-font-family: $font-primary;
+	$button-font-size: .95em;
+	$button-font-weight: 300;
+
+
+// -------------------------------------------------------------
+// 2.0 Extends & Mixin Declarations & Unsemantic Grid System
+
+//	1. Grid only
+//	2. Grid and Prefix/Suffix Support
+//	3. Grid, Prefix/Suffix, Push/Pull Support, optional IE7 support
+// -------------------------------------------------------------
+	@import "_extends.scss";
+	@import "_mixins.scss";
+	@import "unsemantic/_layout-slim.scss"; // 1
+	//@import "unsemantic/_layout-p2.scss"; // 2
+	//@import "unsemantic/_layout.scss"; // 3
+
+// -------------------------------------------------------------
+// 3.0 Normalize
+// -------------------------------------------------------------
+	@import "_normalize.scss";
+
+// -------------------------------------------------------------
+// 4.0 Typography
+// -------------------------------------------------------------
+	@import "_typography.scss";
+
+// -------------------------------------------------------------
+// 5.0 Forms
+// -------------------------------------------------------------
+	@import "_forms.scss";
+
+// -------------------------------------------------------------
+// 6.0 Menus
+// -------------------------------------------------------------
+	@import "_menus.scss";
+
+// -------------------------------------------------------------
+// 7.0 Accessibility
+// -------------------------------------------------------------
+	@import "_accessibility.scss";
+	
+// -------------------------------------------------------------
+// 8.0 Wordpress Defaults
+// -------------------------------------------------------------
+	@import "_wordpress.scss";	
+	
+// -------------------------------------------------------------
+// 9.0 Your Styles Here
+// -------------------------------------------------------------
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------
+// 10.0 Print Styles
+// -------------------------------------------------------------
+	@import "_print.scss";
