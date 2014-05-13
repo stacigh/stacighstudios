@@ -403,6 +403,7 @@ audio:not([controls]) {
   content: ""; }
 
 html {
+  font-size: 100%;
   background: white;
   color: #404040;
   -webkit-text-size-adjust: 100%;
@@ -455,11 +456,20 @@ caption, th, td {
   text-align: left; }
 
 body {
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.5em;
   color: #404040;
   font-family: sans-serif; }
 
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 1.5rem; } }
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.25rem; } }
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 1rem; } }
 ::selection {
   background: #d9effc;
   text-shadow: none; }
@@ -545,7 +555,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  font-size: 1em; }
+  font-size: 1rem; }
 
 q {
   margin: 0 1.5em; }
@@ -684,36 +694,31 @@ button[disabled],
 input[disabled] {
   cursor: default; }
 
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      display: none;
-      float: left;
-      left: 0;
-      position: absolute;
-      top: 1.5em;
-      z-index: 99999; }
-      .main-navigation ul ul a {
-        width: 200px; }
-      .main-navigation ul ul ul {
-        left: 100%;
-        top: 0; }
-    .main-navigation ul li:hover > ul {
-      display: block; }
-  .main-navigation li {
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    display: none;
     float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    left: 0;
+    position: absolute;
+    top: 1.5em;
+    z-index: 99999; }
+    .main-navigation ul ul a {
+      width: 200px; }
+    .main-navigation ul ul ul {
+      left: 100%;
+      top: 0; }
+  .main-navigation ul li:hover > ul {
+    display: block; }
+.main-navigation li {
+  float: left;
+  position: relative; }
+.main-navigation a {
+  display: block;
+  text-decoration: none; }
 
 .menu-toggle {
   cursor: pointer;
@@ -884,6 +889,29 @@ iframe,
 object {
   max-width: 100%; }
 
+html {
+  overflow: hidden; }
+
+.site-header {
+  background: #2b2b2b;
+  color: white;
+  float: left;
+  width: 250px;
+  left: 250px;
+  margin-left: -250px;
+  position: relative;
+  overflow-y: auto;
+  padding: 0 20px; }
+
+.site-content {
+  float: left;
+  width: 100%;
+  padding: 0 0 0 20px; }
+
+.content-area {
+  margin-left: 250px;
+  overflow-y: auto; }
+
 @media print {
   * {
     background: transparent !important;
@@ -923,7 +951,6 @@ object {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
