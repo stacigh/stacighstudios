@@ -3,17 +3,17 @@
  * Jetpack Compatibility File
  * See: http://jetpack.me/
  *
- * @package Helppo
+ * @package StacighStudios
  */
 
 /**
  * Add theme support for Infinite Scroll.
  * See: http://jetpack.me/support/infinite-scroll/
  */
-function helppo_jetpack_setup() {
+function stacighstudios_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
 		'footer'    => 'page',
 	) );
 }
-add_action( 'after_setup_theme', 'helppo_jetpack_setup' );
+add_action( 'after_setup_theme', 'stacighstudios_jetpack_setup' );

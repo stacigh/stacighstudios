@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package Helppo
+ * @package StacighStudios
  */
 
 get_header(); ?>
@@ -24,46 +24,46 @@ get_header(); ?>
 							single_tag_title();
 
 						elseif ( is_author() ) :
-							printf( __( 'Author: %s', 'helppo' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							printf( __( 'Author: %s', 'stacighstudios' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 						elseif ( is_day() ) :
-							printf( __( 'Day: %s', 'helppo' ), '<span>' . get_the_date() . '</span>' );
+							printf( __( 'Day: %s', 'stacighstudios' ), '<span>' . get_the_date() . '</span>' );
 
 						elseif ( is_month() ) :
-							printf( __( 'Month: %s', 'helppo' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'helppo' ) ) . '</span>' );
+							printf( __( 'Month: %s', 'stacighstudios' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'stacighstudios' ) ) . '</span>' );
 
 						elseif ( is_year() ) :
-							printf( __( 'Year: %s', 'helppo' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'helppo' ) ) . '</span>' );
+							printf( __( 'Year: %s', 'stacighstudios' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'stacighstudios' ) ) . '</span>' );
 
 						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', 'helppo' );
+							_e( 'Asides', 'stacighstudios' );
 
 						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
-							_e( 'Galleries', 'helppo');
+							_e( 'Galleries', 'stacighstudios');
 
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'helppo');
+							_e( 'Images', 'stacighstudios');
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', 'helppo' );
+							_e( 'Videos', 'stacighstudios' );
 
 						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', 'helppo' );
+							_e( 'Quotes', 'stacighstudios' );
 
 						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', 'helppo' );
+							_e( 'Links', 'stacighstudios' );
 
 						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
-							_e( 'Statuses', 'helppo' );
+							_e( 'Statuses', 'stacighstudios' );
 
 						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-							_e( 'Audios', 'helppo' );
+							_e( 'Audios', 'stacighstudios' );
 
 						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
-							_e( 'Chats', 'helppo' );
+							_e( 'Chats', 'stacighstudios' );
 
 						else :
-							_e( 'Archives', 'helppo' );
+							_e( 'Archives', 'stacighstudios' );
 
 						endif;
 					?>
@@ -90,7 +90,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php helppo_paging_nav(); ?>
+			<?php stacighstudios_paging_nav(); ?>
 
 		<?php else : ?>
 

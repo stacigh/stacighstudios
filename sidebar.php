@@ -2,7 +2,7 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package Helppo
+ * @package StacighStudios
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
@@ -13,14 +13,14 @@
 			</aside>
 
 			<aside id="archives" class="widget">
-				<h1 class="widget-title"><?php _e( 'Archives', 'helppo' ); ?></h1>
+				<h1 class="widget-title"><?php _e( 'Archives', 'stacighstudios' ); ?></h1>
 				<ul>
 					<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 				</ul>
 			</aside>
 
 			<aside id="meta" class="widget">
-				<h1 class="widget-title"><?php _e( 'Meta', 'helppo' ); ?></h1>
+				<h1 class="widget-title"><?php _e( 'Meta', 'stacighstudios' ); ?></h1>
 				<ul>
 					<?php wp_register(); ?>
 					<li><?php wp_loginout(); ?></li>

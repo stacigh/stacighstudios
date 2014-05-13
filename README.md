@@ -1,7 +1,7 @@
-Helppo (that's Finnish for Easy)
+StacighStudios (that's Finnish for Easy)
 ===
 
-Hi. I'm a starter theme called `Helppo`, which is based off of `underscores`. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called `StacighStudios`, which is based off of `underscores`. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 I may have started out as another `underscores` project but I'm also packaged with `H5BP` and `Unsemantic Grid System`. My CSS stylesheet is built with SCSS so you'll need to have at least a basic understanding of how to use SASS/Compass.
 
@@ -18,11 +18,11 @@ I may have started out as another `underscores` project but I'm also packaged wi
 Getting Started
 ---------------
 
-Download `Helppo` from github. The first thing you want to do is copy the `Helppo` directory and change the name to something else - Like, say, `megatherium` - then you'll need to do a five-step find and replace on the name in all the templates.
+Download `StacighStudios` from github. The first thing you want to do is copy the `StacighStudios` directory and change the name to something else - Like, say, `megatherium` - then you'll need to do a five-step find and replace on the name in all the templates.
 
-* Search for: <code>&nbsp;helppo</code> (with a space before it) and replace with: <code>&nbsp;Megatherium</code> (with a space before it)
-* Search for: `Helppo` and replace with: `Megatherium`
-* Search for: `helppo` and replace with: `megatherium`
+* Search for: <code>&nbsp;stacighstudios</code> (with a space before it) and replace with: <code>&nbsp;Megatherium</code> (with a space before it)
+* Search for: `StacighStudios` and replace with: `Megatherium`
+* Search for: `stacighstudios` and replace with: `megatherium`
 
 Then, update the stylesheet header in style.css and the links in footer.php with your own information. 
 
